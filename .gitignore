@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+*.DS_Store
+*.sass-cache
+public/assets/*
+public/rev-manifest.json
