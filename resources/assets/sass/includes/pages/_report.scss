@@ -1,0 +1,24 @@
+
+	/* DASHBOARD (Home Screen) */
+	/* ----------------------------------------- */
+
+		#report-management {
+			.files li {
+				width:100%;
+			}
+		}
+
+		#view-report {
+			h2 {
+				padding-bottom:10px;
+				small {
+					font-size:80%;
+				}
+			}
+			table {
+				table-layout:fixed;
+			}
+			small {
+				font-style:italic;
+			}
+		}

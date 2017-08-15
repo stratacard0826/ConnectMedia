@@ -1,0 +1,188 @@
+$main-color: #e02222;
+#email-app-container{
+    max-width: 1170px;
+    margin: auto;
+    color: #000;
+    .progress-container{
+        position: relative;
+        margin-bottom: 60px;
+        .circle{
+            background-color: #dadfe1;
+            border-radius: 40px;
+            width: 35px;
+            height: 35px;
+            display: block;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 600;
+/*            color: #b2b8bc;*/
+            color: #000;
+            font-size: 16px;
+        }
+        .circle ~ .title{
+            display: none;
+        }
+        .progress-1{
+            float: left;
+            &.active{
+                cursor: pointer;
+            }
+            @media all and (max-width:585px){
+                width: 100px;
+            }
+        }
+        .progress-3{
+            float: right;
+            text-align: right;
+            .title{
+                position: absolute;
+                right: 0px;
+                @media all and (max-width:585px){
+                    width: 100px;
+                }
+            }
+            &.active{
+                cursor: pointer;
+            }
+        }
+        .progress-2{
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            margin-left: -17px;
+            .title{
+                position: relative;
+                left: -50%;
+                margin-left: 42px;
+                @media all and (max-width:585px){
+                    width: 100px;
+                }
+            }
+            &.active{
+                cursor: pointer;
+            }
+        }
+        .progress-sidebar{
+            position: absolute;
+            width: calc(50% - 65px);
+            border: 3px solid #dadfe1;
+            background-color: #dadfe1;
+            top: 14px;
+            border-radius: 3px;
+            &.bar1{
+                left: 41px;
+            }
+            &.bar2{
+                right: 41px;
+            }
+        }
+        .active{
+            .circle{
+                color: #fff;
+                background: $main-color;
+                ~ .title{
+                    color: $main-color;
+                    margin-top: 10px;
+                    font-weight: 600;
+                    display: block;
+                }
+            }
+        }
+        .active +  .progress-sidebar{
+            border-color: $main-color;
+            background-color: $main-color;
+        }
+    }
+
+    .platform-holder{
+        border: 2px solid #dadfe1;
+        text-align: center;
+/*        color: #6d97bd;*/
+        padding-bottom: 35px;
+        cursor: pointer;
+        margin-bottom: 20px;
+        color: #000;
+        img{
+            margin-top: 55px;
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+        span{
+            font-size: 18px;
+        }
+        &.active{
+            border-color: $main-color;
+        }
+    }
+    
+    #mailapp-container{
+        .platform-holder{
+            img{
+                height: 117px;
+            }
+        }
+    }
+    
+    .button-container{
+        margin-top: 25px;
+        .previous{
+            float: left;
+            cursor: pointer;
+            color: #000;
+        }
+        .next{
+            float: right;
+            cursor: pointer;
+            color: #8a9298;
+        }
+    }
+
+    .hideen{
+        display: none;
+    }
+
+    .banner-holder{
+        margin-bottom: 50px;
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+        @media all and (max-width: 585px){
+            margin-bottom: 10px;
+        }
+    }
+    .content{
+        counter-reset: h2counter;
+        > p{
+            position: relative;
+            padding-left: 31px;
+            &:before{
+                content: counter(h2counter) ". ";
+                counter-increment: h2counter;
+                left: 0px;
+                position: absolute;
+                font-weight: bold;
+            }
+        }
+        > img{
+            max-width: 100%;
+        }
+        .table{
+            max-width: 400px;
+            th{
+                background: #999999;
+                border: 1px solid #cccccc;
+            }
+            td{
+                background: #eeeeee;
+                border: 1px solid #cccccc;
+            }
+            td, th{
+            }
+            
+            .blue-color{
+                color: #0066cc;
+            }
+        }
+    }
+}

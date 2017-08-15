@@ -1,0 +1,16 @@
+
+	/* BUTTONS */
+	/* ----------------------------------------- */
+
+		.btn-back {
+			background-color:#eee;
+			color:#999;
+			border-color:#eee;
+		}
+
+		.btn-default {
+			border:1px solid #EFEFEF;
+			&:hover {
+				border:1px solid #DDD;
+			}
+		}

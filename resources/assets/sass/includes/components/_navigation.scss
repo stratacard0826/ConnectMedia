@@ -1,0 +1,183 @@
+
+	/* NAVIGATION */
+	/* ----------------------------------------- */
+
+		#navigation > ul > li {
+
+			border-bottom:1px solid map-get($colors,'navborder');
+			position:relative;
+			cursor:pointer;
+
+			> a {
+
+				font-size:16px;
+				display:block;
+				padding:10px 20px;
+
+				i {
+					color:map-get($colors,'navicon');
+					width:30px;
+					display:inline-block;
+					font-size:18px;
+				}
+
+			}
+
+			ul {
+
+				display:none;
+				padding:10px 0 10px 30px;
+				border-bottom:1px solid map-get($colors,'navborder');
+
+				li.title {
+					display:none;
+				}
+
+				li {
+					cursor:pointer;
+
+					a {
+						text-decoration:none;
+					}
+
+					i {
+						width:20px;
+						display:inline-block;
+					}
+
+				}
+
+			}
+
+			&.active {
+
+
+				border-bottom:1px solid map-get($colors,'navborderactive');
+				cursor:default;
+
+				> a i {
+					color:#FFF !important;
+				}
+
+				span.arrow {
+					@include triangle( left, 25px, 9px, map-get($colors,'background') );
+					position:absolute;
+					right:0;
+					top:12px;
+				}
+
+				&:hover a i {
+					color:inherit;
+				}
+
+				&.drop {
+					border-bottom:none;
+				}
+
+			}
+
+			&:hover {
+				text-decoration:none;
+				> a {
+					text-decoration:none;
+					> i {
+						color:darken( map-get($colors,'navicon') , 10% );
+					}
+				}
+			}
+
+			&.drop ul,
+			&.active ul {
+
+				display:block;
+
+			}
+
+			&.search {
+				display:none;
+			}
+
+		}
+
+
+		@media all and (min-width:700px) and (max-width:960px){
+			#navigation > ul {
+
+				width:35px;
+				position:fixed;
+
+				> li {
+
+					border-bottom:none;
+
+					> a {
+						@include transition(none);
+						padding:5px 0 !important;
+						text-align:center;
+						> span {
+							display:none;
+					 	}
+					}
+
+					ul {
+						display:none !important;
+						position:absolute;
+						top:0;
+						left:100%;
+						padding:0;
+						white-space:nowrap;
+						z-index:9;
+						padding:0 0 10px 0;
+						li {
+							padding:0 30px 0 20px;
+						}
+						li.title {
+							display:block;
+							font-size:16px;
+							padding:5px 0;
+							margin-bottom:5px;
+						}
+					}
+
+					&:hover ul {
+						display:block !important;
+					}
+
+					&.search {
+						display:block;
+					}
+
+				}
+
+			}
+		}
+
+
+		@media all and (max-height:873px){
+			#navigation > ul > li {
+
+				border-bottom:none;
+
+				> a {
+				
+					padding:2px 20px;
+				
+				}
+
+				ul {
+
+					padding:10px 0 10px 30px;
+					border-bottom:none;
+
+					li {
+				
+						line-height:normal;
+						padding:3px 0;
+					
+					}
+				
+				}
+
+			}
+
+		}

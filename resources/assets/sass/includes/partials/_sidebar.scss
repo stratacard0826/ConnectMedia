@@ -1,0 +1,60 @@
+
+	/* SIDEBAR */
+	/* ----------------------------------------- */
+
+
+
+		aside#sidebar {
+
+			height:100%;
+			width:224px;
+			padding-top:43px;
+			position:absolute;
+			z-index:10;
+			top:0;
+			transition:left 0.5s ease;
+
+			.logo {
+				text-align:center;
+				position:relative;
+				top:-25px;
+			}
+
+			&.open {
+				left:0;
+				transition:left 0.5s ease;
+			}
+
+		}
+
+
+
+		@media all and (max-width:960px){
+			aside#sidebar {
+
+				.logo {
+					display:none;	
+				}
+
+			}
+		}
+
+
+		@media all and (min-width:700px) and (max-width:960px){
+			aside#sidebar {
+
+				width:35px;
+
+			}
+		}
+
+
+		@media all and (max-width:700px){
+			aside#sidebar {
+
+				position:fixed;
+				left:-100%;
+
+			}
+		}
+

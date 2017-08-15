@@ -1,0 +1,107 @@
+
+	/* GENERAL */
+	/* ----------------------------------------- */
+
+		//Primary Body Classes
+		body {
+			@each $key, $value in $primary {
+				#{"" + $key}: $value ;
+			}
+		}
+
+
+		//Anchor
+		a {
+			outline:none;
+		}
+
+		//Headers
+		h1,h2,h3,h4,h5,h6 {
+			margin:0;
+			padding:0;
+			line-height:normal;
+		}
+
+		//Italic
+		em {
+			font-style:italic;
+		}
+
+
+		@each $key, $value in $colors {
+			.bg#{$key} {
+				background: $value;
+			}
+
+			.color#{$key} {
+				color: $value;
+			}
+
+			.hovercolor#{$key}:not([disabled]):hover {
+				@include transition( color 0.5s ease );
+				color: $value;
+			}
+
+			.hoverbg#{$key}:not([disabled]):hover {
+				@include transition( background 0.5s ease );
+				background: $value;
+			}
+
+			.hovercolordarken#{$key}:not([disabled]):hover {
+				@include transition( color 0.5s ease );
+				color: darken($value,10%);
+			}
+
+			.hoverbgdarken#{$key}:not([disabled]):hover {
+				@include transition( background 0.5s ease );
+				background: darken($value,10%);
+			}
+
+			.hovercolorlighten#{$key}:not([disabled]):hover {
+				@include transition( color 0.5s ease );
+				color: lighten($value,10%);
+			}
+
+			.hoverbglighten#{$key}:not([disabled]):hover {
+				@include transition( background 0.5s ease );
+				background: lighten($value,10%);
+			}
+
+
+		}
+
+		@each $index in $fonts {
+			$i: index($fonts,$index);
+			.font#{$i} {
+				font-family:$index;
+			}
+		}
+
+		
+		//Clearfix
+		.clearfix {
+
+			zoom:1;
+
+			&:before {
+				content: '';
+				display: table;
+			}
+
+			&:after {
+				@extend :before;
+				clear:both;
+			}
+
+		}
+
+
+
+
+
+		//Box Sizing
+		*,
+		*:before,
+		*:after {
+			@include box-sizing(border-box);
+		}

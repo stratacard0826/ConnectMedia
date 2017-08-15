@@ -1,0 +1,60 @@
+
+	/* BUYERS LOGOUT */
+	/* ----------------------------------------- */
+
+		#logout2-view {
+
+			.category {
+				padding-bottom:7px;
+			}
+
+			.scalable {
+				width:200px;
+			}
+
+		}
+
+
+		#logout2-report {
+
+			aside {
+
+				> section {
+					margin-bottom:30px;
+					float:none;
+					width:100%;
+				}
+
+			}
+
+			.none {
+				font-size:30px;
+				padding-top:60px;
+			}
+
+		}
+
+		@media all and (max-width:900px){
+			#logout2-report {
+
+				aside > section {
+
+					width:100%;
+					float:none;
+
+				}
+
+			}
+		}
+
+
+		@media all and (max-width:500px){
+			#logout2-view {
+
+				.scalable {
+					width:auto;
+				}
+
+			}
+		}
+

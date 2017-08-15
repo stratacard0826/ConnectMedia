@@ -1,0 +1,49 @@
+
+/* NAVIGATION */
+/* ----------------------------------------- */
+
+#news {
+
+	.panel-body {
+
+		max-height:386px;
+		overflow:scroll;
+		margin-bottom:15px;
+
+		.col85 {					
+			padding:0 15px;
+		}
+
+		.loadmore {
+			margin-top:10px;
+		}
+
+	}
+
+}
+
+.reminders-container{
+    .form-group{
+        margin-bottom: 0px;
+        .select select{
+            height: 100%;
+        }
+        .required::after{
+            right: 32px;
+        }
+    }
+}
+
+@media all and (max-width:620px){
+	#news .panel-body article {
+
+		.col15 {
+			display:none;
+		}
+
+		.col85 {
+			width:100%;
+		}
+
+	}
+}

@@ -1,0 +1,96 @@
+
+	/* FAQ  */
+	/* ----------------------------------------- */
+
+		#faq {
+
+			padding-top:20px;
+
+			nav {
+
+				margin-bottom:20px;
+
+				ul li {
+
+					background:#f7f7f7;
+					margin-bottom:1px;
+					border-left:2px solid #D0D0D0;
+					height:37px;
+
+					a {
+						text-decoration:none;
+					}
+
+					.icon {
+						background:#EFEFEF;
+						display:inline-block;
+						width:36px;
+						height:36px;
+						line-height:36px;
+						text-align:center;
+					}
+
+					.text {
+						text-indent:5px;
+						font-size:13px;
+					}
+
+
+					&.active {
+						background:#e02222;
+						border-left:2px solid #d12020;
+						color:#FFF;
+						font-weight:500;
+						.icon {
+							background:#d12020;
+							i {
+								color:#FFF;
+							}
+						}
+					}
+
+				}
+
+			}
+
+			uib-accordion {
+
+				.panel-default {
+					@include box-shadow(none);
+					@include border-radius(0);
+
+					border-color:#F2F2F2;
+					.panel-heading {
+						@include border-radius(0);
+						background:#000;
+						padding:0;
+
+						h4 {
+
+							a {
+								display:block;
+								font-family:nth($fonts,2);
+								color:#FFF;
+								font-size:19px;
+								padding:10px 15px;
+
+								&:hover,
+								&:focus {
+									outline:none;
+									text-decoration:none;
+								}
+							}
+						}
+					}
+
+					.panel-body {
+						color:#000;
+						font-size:15px;
+					}
+
+				}
+
+			}
+
+		}
+

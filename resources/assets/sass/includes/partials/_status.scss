@@ -1,0 +1,36 @@
+
+	/* TABLE */
+	/* ----------------------------------------- */
+
+		.status {
+
+			display:inline-block;
+			font-size:12px !important;
+			color:#FFF;
+			height:19px;
+			padding:0 6px;
+			line-height:19px;
+			font-weight:700;
+
+			&.active {
+				background:#3cc051;
+			}
+
+			&.phase-in {
+				background:#579aec;
+			}
+
+			&.phase-out {
+				background:#fcb322;
+			}
+
+			&.concluded,
+			&.removed {
+				background:#999999;
+			}
+
+			&.upcoming {
+				background:#e54d42;
+			}
+
+		}

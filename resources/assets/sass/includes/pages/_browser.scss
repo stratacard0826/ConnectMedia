@@ -1,0 +1,15 @@
+
+	/* LOGIN */
+	/* ----------------------------------------- */
+
+		#pbrowser {
+
+			@extend #plogin;
+
+			section form div i {
+				position:static !important;
+			}
+
+		}
+
+

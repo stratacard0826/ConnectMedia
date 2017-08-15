@@ -1,0 +1,83 @@
+
+	/* DASHBOARD (Home Screen) */
+	/* ----------------------------------------- */
+
+		#document {
+
+			form.search {
+				margin-bottom:10px;
+				position:relative;
+
+				section.column {
+					padding:0;
+					&.pad {
+						padding:0 10px;
+					}
+
+					> div {
+						position:relative;
+					}
+				}
+
+				input {
+					line-height:normal;
+					width:100%;
+				}
+
+				button {
+					border:none;
+					background:none;
+					position:absolute;
+					right:0;
+					top:4px;
+				}
+
+				border-bottom:1px solid #EEE;
+
+			}
+
+
+			.list li {
+				width:155px;
+				display:inline-block;
+				margin:0 30px 25px 0;
+
+				h2 {
+					font-size:16px;
+				}
+
+				a.view,
+				a.download,
+				.documents,
+				.date,
+				.file,
+				time {
+					font-size:10px;
+					font-weight:600;
+					max-width:49%;
+					i {
+						font-size:13px;
+					}	
+				}
+
+				h2,
+				.file,
+				.documents {
+					white-space:nowrap;
+					text-overflow:ellipsis;
+					overflow:hidden;
+					width:100%;
+				}
+
+				.details {
+					margin-top:-2px;
+				}
+
+				.actions,
+				.documents {
+					line-height:10px;
+				}
+
+			}
+
+		}

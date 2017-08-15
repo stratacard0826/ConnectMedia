@@ -1,0 +1,86 @@
+
+	/* PROGRESS BAR */
+	/* ----------------------------------------- */
+
+
+	progress {
+		@include appearance(none);
+		position:relative;
+
+		&::-webkit-progress-bar { 
+			@include border-radius(3px);
+			background:#EDEDED;
+			border:1px solid #CFCFCF;
+			height:6px;
+		}
+
+		&::-moz-progress-bar { 
+			@include border-radius(3px);
+			background:#EDEDED;
+			border:1px solid #CFCFCF;
+			height:6px;
+		}
+
+		&::-webkit-progress-value {
+			@include border-radius(3px 0 0 3px);
+			background:#3B99FC;
+			border:1px solid #3385DB;
+			border-right:none;
+			position:absolute;
+			height:6px;
+			top:0;
+			left:0;
+		}
+
+		&::-moz-progress-value {
+			@include border-radius(3px 0 0 3px);
+			background:#3B99FC;
+			border:1px solid #3385DB;
+			border-right:none;
+			position:absolute;
+			height:6px;
+			top:0;
+			left:0;
+		}
+
+		&[value="100"]::-webkit-progress-value {
+			@include border-radius(3px);
+		}
+
+		&[value="100"]::-moz-progress-value {
+			@include border-radius(3px);
+		}
+
+		&.error {
+
+			&::-webkit-progress-value {
+				background-color:map-get($colors,'red');
+				border:1px solid darken( map-get($colors,'red') , 10% );
+				border-right:none;
+			}
+
+			&::-moz-progress-value {
+				background-color:map-get($colors,'red');
+				border:1px solid darken( map-get($colors,'red') , 10% );
+				border-right:none;
+			}
+
+		}
+
+		&.success {
+
+			&::-webkit-progress-value {
+				background-color:#78AB46;
+				border:1px solid darken( #78AB46 , 10% );
+				border-right:none;
+			}
+
+			&::-moz-progress-value {
+				background-color:#78AB46;
+				border:1px solid darken( #78AB46 , 10% );
+				border-right:none;
+			}
+
+		}
+
+	}

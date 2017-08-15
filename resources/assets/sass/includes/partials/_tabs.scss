@@ -1,0 +1,22 @@
+
+	/* TABS - @extended from Bootstrap:  */
+	/* ----------------------------------------- */
+
+		.nav-tabs {
+
+			li a {
+				@include border-radius(0);
+				color:inherit !important;
+				&:hover {
+					border-color:#eee !important;
+				}
+			}
+
+
+
+			li.active a {
+				border-top:2px solid map-get($colors,'red') !important;
+			}
+
+		}
+

@@ -1,0 +1,58 @@
+
+	/* ACCOUNT */
+	/* ----------------------------------------- */
+
+		#account {
+
+			[data-hide] {
+				top:100%;
+			}
+
+			.name {
+				margin:0 5px;
+			}
+
+			ul {
+				li {
+					font-size:13px;
+					border-top:1px solid map-get($colors,'eee');
+
+					a {
+
+						white-space:nowrap;
+
+						i {
+							width:15px;
+						}
+
+						display:block;
+						position:relative;
+						padding:15px 10px;
+						line-height:normal;
+
+						&:hover {
+							text-decoration:none;
+						}
+
+					}
+
+					&:first-child {
+						border-top:none;
+					}
+
+				}
+				
+			}
+
+		}
+
+
+		@media all and (max-width:400px){
+			#account {
+
+				.name {
+					display:none;
+				}
+
+			}
+		}

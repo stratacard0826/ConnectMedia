@@ -1,0 +1,57 @@
+/* TYPOGRAPHY */
+/* ----------------------------------------- */
+
+
+	@font-face {
+	    font-family: 'Gnuolane';
+	    src: url('/public/assets/fonts/gnuolane/gnuolane.eot');
+	    src: url('/public/assets/fonts/gnuolane/gnuolane.eot?#iefix') format('embedded-opentype'),
+	         url('/public/assets/fonts/gnuolane/gnuolane.woff2') format('woff2'),
+	         url('/public/assets/fonts/gnuolane/gnuolane.woff') format('woff'),
+	         url('/public/assets/fonts/gnuolane/gnuolane.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+
+	@font-face {
+		font-family: 'jrgicons';
+	    src: url('/public/assets/fonts/jrgicons/jrgicons.eot');
+	    src: url('/public/assets/fonts/jrgicons/jrgicons.eot#iefix') format('embedded-opentype'),
+	         url('/public/assets/fonts/jrgicons/jrgicons.woff') format('woff'),
+	         url('/public/assets/fonts/jrgicons/jrgicons.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+
+	.fa-martini:before {
+		font-family:'jrgicons' !important;
+		content: "\e800";
+	}
+
+	.fa-dinner:before {
+		font-family:'jrgicons' !important;
+		content: "\e801";
+	}
+
+	.fa-condiments:before {
+		font-family:'jrgicons' !important;
+		content: "\e802";
+	}
+
+	.fa-cutlery:before {
+		font-family:'jrgicons' !important;
+		content: "\e803";
+	}
+
+	.fa-serveware:before {
+		font-family:'jrgicons' !important;
+		content: "\e804";
+		font-size:70%;
+	}
+
+	.fa-stop-watch:before {
+		font-family:'jrgicons' !important;
+		content: "\e805";
+	}

@@ -1,0 +1,80 @@
+
+	/* GENERAL */
+	/* ----------------------------------------- */
+
+		//Include the Sticky Footer
+		@include sticky-footer(33px,'#site','#footer-spacer','#footer');
+
+		//Standard
+		html,
+		body {
+			width:100%;
+			height:100%;
+			font-size:14px;
+			min-height:798px;
+			min-width:320px;
+		}
+
+		//Selection Color
+		* {
+			@include selection( #f00 , #FFF );
+		}
+
+		//Float Right
+		.fright {
+			float:right;
+		}
+
+		//Float Left
+		.fleft {
+			float:left;
+		}
+
+		//Rounded Corners
+		.rounded {
+			@include border-radius(100%);
+		}
+
+		//Show Cursor on Button Hover
+		.btn:hover,
+		.btn-lg:hover,
+		.btn-md:hover,
+		.btn-sm:hover,
+		.btn-xs:hover {
+			cursor:pointer;
+			text-decoration:none;
+		}
+
+		//Vertical Divider
+		.vdivider {
+			display:inline-block;
+			margin:0 10px;
+			width:1px;
+			height:100%;
+		}
+
+		//Show Cursor on Point
+		[ng-click] {
+			cursor:pointer;
+		}
+
+		//Hide elements on Load
+		[ng-cloak] {
+			display:none;
+		}
+
+		//The Submit Notice
+		.submitnotice {
+			font-size:10px; 
+			display:block; 
+			font-style:italic;
+		}
+
+		header .fleft.submitnotice {
+			margin-right:5px;
+		}
+
+		//Spacing for Tabs
+		.tab-content {
+			padding:20px;
+		}

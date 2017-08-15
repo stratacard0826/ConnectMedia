@@ -1,0 +1,57 @@
+
+	/* DASHBOARD (Home Screen) */
+	/* ----------------------------------------- */
+
+		#tech {
+            .panel-body{
+                overflow-x: auto;
+            }
+			#masonry {
+				min-height:150px;
+			
+				.none {
+					line-height:150px;
+				}
+                .grid-item{
+                    width: 380px;
+                    @media all and (max-width:880px){
+                        position: initial !important;
+                        width: 100%;
+                    }
+                    
+                }   
+			
+				.box {
+					@include border-radius(10px);
+					border:1px solid #DDD;
+					margin-bottom:20px;
+
+					img {
+						@include border-radius(10px 10px 0 0);
+						max-width:250px;
+						width:100%;
+					}
+
+					.block {
+
+						padding:5px 20px;
+
+						h4 {
+							font:nth($fonts,2);
+							font-size:30px;
+						}
+
+						table {
+							margin-top:10px;
+							margin-bottom:0;
+						}
+
+						hr {
+							margin:10px 0;
+						}
+
+					}
+
+				}
+			}
+		}

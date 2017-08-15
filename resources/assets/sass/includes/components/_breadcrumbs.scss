@@ -1,0 +1,29 @@
+
+	/* BREADCRUMBS */
+	/* ----------------------------------------- */
+
+		.breadcrumb {
+			background:map-get($colors,'eee');
+			padding:0 15px;
+
+			li, li a, .active {
+				color:map-get($colors,'444');
+				font-weight:400;
+				letter-spacing:-1px;
+				font-size:12px;
+
+				i {
+					color:map-get($colors,'666');
+					width:15px;
+
+					&.fa-diner {
+						width:20px;
+					}
+				}
+			}
+
+			a {
+				cursor:pointer;
+			}
+
+		}

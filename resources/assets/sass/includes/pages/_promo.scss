@@ -1,0 +1,148 @@
+
+	/* DASHBOARD (Home Screen) */
+	/* ----------------------------------------- */
+
+		#promo {
+
+			form.search {
+				margin-bottom:10px;
+				position:relative;
+
+				section.column {
+					padding:0;
+					&.pad {
+						padding:0 10px;
+					}
+
+					> div {
+						position:relative;
+					}
+				}
+
+				input {
+					line-height:normal;
+					width:100%;
+				}
+
+				button {
+					border:none;
+					background:none;
+					position:absolute;
+					right:0;
+					top:4px;
+				}
+
+				border-bottom:1px solid #EEE;
+
+			}
+
+			article#information {
+				padding:20px 0 10px;
+				border:none;
+				width:100%;
+				margin-bottom:10px;
+				border-bottom:1px solid #DDD;
+
+				.media {
+					@include box-sizing(border-box);
+					width:30%;
+					float:left;
+					max-width:300px;
+					padding-right:25px;
+				}
+
+				.details {
+					width:70%;
+					float:left;
+				}
+
+				h1 {
+					margin:0;
+				}
+
+				p {
+					margin:5px 0;
+				}
+
+				ul li {
+					padding-right:50px;
+					font-size:16px;
+					padding:2px 0;
+
+					strong {
+						display:inline-block;
+						min-width:130px;
+						font-weight:normal;
+						float:left;
+						i {
+							font-size:85%;
+							width:18px;
+						}
+					}
+					span,
+					time,
+					div {
+						font-size:95%;
+					}
+				}
+			}
+
+			section#downloads {
+				header {
+					
+					@include box-sizing( border-box );
+					padding:15px 0;
+
+					h2 {
+						font-size:21px;
+						border-bottom:1px solid #EFEFEF;
+					}
+
+				}
+			}
+
+			.list li {
+				width:155px;
+				display:inline-block;
+				margin:0 30px 25px 0;
+
+				h2 {
+					font-size:16px;
+				}
+
+				a.action,
+				.documents,
+				.category,
+				time {
+					font-size:10px;
+					font-weight:600;
+					i {
+						font-size:13px;
+					}	
+				}
+
+				a.edit {
+					position:relative;
+					top:-1px;	
+				}
+
+				h2,
+				.documents {
+					white-space:nowrap;
+					text-overflow:ellipsis;
+					overflow:hidden;
+					width:100%;
+				}
+
+				.details {
+					margin-top:-2px;
+				}
+
+				.actions,
+				.documents {
+					line-height:10px;
+				}
+
+			}
+
+		}

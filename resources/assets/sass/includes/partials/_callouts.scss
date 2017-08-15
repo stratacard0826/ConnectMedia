@@ -1,0 +1,50 @@
+
+	/* CALLOUTS - @extended from Bootstrap:  */
+	/* ----------------------------------------- */
+
+		.bs-callout {
+
+		  	@include border-radius(3px);
+		  	margin: 20px 0;
+		  	padding: 15px 30px 15px 15px;
+		  	border:1px solid #eee;
+		  	border-left-width:5px;
+		
+		  	h4 {
+		  		margin-top:0;
+		  		font-weight:500;
+		  	}
+
+		  	p:last-child {
+		  		margin-bottom:0;
+		  	}
+
+		  	code,
+		  	.highlight {
+		  		background-color:#FFF;
+		  	}
+
+		}
+
+
+		.bs-callout-danger {
+		  	border-left-color:#ce4844;
+		  	h4 {
+		  		color:#ce4844;
+		  	}
+		}
+
+		.bs-callout-warning {
+		  	border-left-color:#aa6708;
+		  	h4 {
+		  		color:#aa6708;
+		  	}
+		}
+
+		.bs-callout-info {
+		  	border-left-color:#1b809e;
+		  	h4 {
+		  		color:#1b809e;
+		  	}
+		}
+

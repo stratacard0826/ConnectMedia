@@ -1,0 +1,44 @@
+
+	/* LOGIN */
+	/* ----------------------------------------- */
+
+		#perror {
+
+			background:#000 url('../images/bg.jpg') center center no-repeat;
+			background-size:100% 100%;
+
+			section {
+				@extend .clearfix;
+				@include rgba-background( rgba(0,0,0,.7) );
+				@include box-sizing(border-box);
+				@include single-box-shadow(0,0,6px,1px,#000);
+				width:400px;
+				margin:30px auto;
+				padding:30px;
+				text-align:center;
+
+				h1 {
+					font-size:100px;
+				}
+
+				a,
+				small {
+					display:block;
+					font-size:20px;
+				}
+
+				small {
+					padding-bottom:20px;
+				}
+
+			}
+
+		}
+
+		@media all and (max-width:350px) {
+			#login section {
+
+			}
+		}
+
+

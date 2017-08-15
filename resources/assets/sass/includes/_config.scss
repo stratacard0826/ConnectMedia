@@ -1,0 +1,62 @@
+
+	/* CONFIG */
+	/* ----------------------------------------- */
+
+
+		//Fonts
+		$fonts: 		("Open Sans","Gnuolane","FontAwesome");
+
+
+		//Colors
+		$colors: 		(
+			"000": 				#000,
+			"111": 				#111,
+			"222": 				#222,
+			"333": 				#333,
+			"444": 				#444,
+			"555": 				#555,
+			"666": 				#666,
+			"777": 				#777,
+			"888": 				#888,
+			"999": 				#999,
+			"aaa": 				#AAA,
+			"bbb": 				#BBB,
+			"ccc": 				#CCC,
+			"ddd": 				#DDD,
+			"eee": 				#EEE,
+			"fff": 				#FFF,
+			"red": 				#E02222,
+			"search": 			#7D7D7D,
+			"navborder": 		#5C5C5C,
+			"navborderactive": 	#E96565,
+			"navicon": 			#565656,
+			"background": 		#FFFFFF,
+			"text": 			#5C5C5C,
+			"article":			#FFFFFF,
+			"lightgray": 		#E5E5E5,
+			"slategray": 		#778899,
+			"green": 			#67AB88,
+			"offwhite": 		#F6F7F7,
+			"nearwhite": 		#FAFAFA,
+			"teal": 			#2CADB7,
+			"blue": 			#0367A6,
+			"navyblue": 		#104A74,
+			"info": 			#1B809E
+		);
+
+		//Custom
+
+
+		//Primary Styles
+		$primary: 	(
+			font-size: 					1rem,
+			font-weight: 				300,
+			line-height:				28px,
+			font-family: 				nth($fonts,1),
+			color: 						map-get($colors,"text"),
+			background: 				map-get($colors,"background"),
+			-webkit-font-smoothing: 	antialiased,
+			-moz-osx-font-smoothing: 	grayscale,
+			-webkit-text-size-adjust: 	100%,
+			-ms-text-size-adjust: 		100%
+		);

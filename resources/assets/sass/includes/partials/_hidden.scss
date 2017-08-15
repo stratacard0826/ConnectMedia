@@ -1,0 +1,19 @@
+
+	/* HIDDEN - (Show & Hide Elements on Hover) */
+	/* ----------------------------------------- */
+
+		//Hide Element
+		[data-hide] {
+			display:none;
+		}
+
+		//The Show Button
+		[data-show] {
+			cursor:pointer;
+		}
+
+		//Show Hidden Element on Hover
+		[data-show]:hover > [data-hide],
+		[data-show]:hover + [data-hide] {
+			display:block;
+		}

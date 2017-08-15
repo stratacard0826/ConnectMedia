@@ -1,0 +1,65 @@
+
+	/* Article */
+	/* ----------------------------------------- */
+		#content {
+
+			article {
+
+				padding:15px;
+				border-bottom:1px solid map-get($colors,'nearwhite');
+
+				.center {
+					text-align:center;
+				}
+
+
+				header {
+					ul li {
+						padding-left:15px;
+					}
+				}
+
+				footer {
+					margin-top:80px;
+				}
+				
+				h1 {
+					font-size:25px;
+					margin:70px 0 20px;
+				}
+
+				h3 {
+					font-size:18px;
+					margin-bottom:5px;
+				}
+
+				strong, b {
+					font-weight:bold;
+				}
+
+				em, i {
+					font-style:italic;
+				}
+
+				i[class^="fa"] {
+					font-style:normal;
+				}
+
+				small {
+					font-size:80%;
+				}
+
+				p {
+					font-size:13px;
+					line-height:19px;
+
+					a {
+						font-weight:bold;
+						text-decoration:underline;
+						color:map-get($colors,'000');
+					}
+				}
+
+			}
+
+		}

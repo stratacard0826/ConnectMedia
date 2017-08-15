@@ -1,0 +1,34 @@
+
+	/* CALLOUTS - @extended from Bootstrap:  */
+	/* ----------------------------------------- */
+
+		.panel {
+
+			.panel-heading {
+
+				div.fright {
+
+					height:30px;
+
+					.vdivider {
+						height:31px;
+					}
+
+				}
+
+				.form-group {
+					margin-bottom:0;
+
+					button {
+						border:none;
+					}
+				}
+
+			}
+
+			.panel-body {
+				overflow-x:scroll;
+			}
+
+		}
+

@@ -1,0 +1,137 @@
+
+	/* ALERTS */
+	/* ----------------------------------------- */
+
+		#alerts {
+
+			[data-hide] {
+
+				@include box-shadow(0 0px 3px rgba(0,0,0,.2));
+				width:400px;
+				max-height:167px;
+				top:100%;
+				padding:5px;
+				overflow:scroll;
+				cursor:default;
+
+				ol {
+					li {
+
+						margin-top:5px;
+						font-size:13px;
+						padding:0 10px 0 0;
+						background:map-get($colors,'nearwhite');
+
+						a {
+
+							color:map-get($colors,'000');
+							display:block;
+							position:relative;
+							text-decoration:none;
+
+							span {
+
+								position:relative;
+								z-index:1;
+								width:265px;
+								text-overflow:ellipsis;
+								overflow:hidden;
+								display:block;
+								white-space:nowrap;
+
+								i {
+									color:#FFF;
+									width:27px;
+									height:26px;
+									display:block;
+									line-height:26px;
+									text-align:center;
+									margin-right:10px;
+									float:left;
+									background:map-get($colors,'red');
+									color:map-get($colors,'fff');
+
+								}
+
+								strong {
+									font-weight:bold;
+								}
+
+							}
+
+							small {
+								position:absolute;
+								right:0;
+								top:0;
+								height:100%;
+								font-size:11px;
+								line-height:26px;
+								font-weight:800;
+								font-style:italic;
+								color:map-get($colors,'red');
+								font-family:nth($fonts,2);
+							}
+
+						}
+
+
+
+						&:hover {
+
+							a span {
+								i {
+									background: darken(map-get($colors,'red'),10%);
+									transition: background 0.5s ease;
+								}
+							}
+
+						}
+
+						&:first-child {
+							margin-top:0;
+						}
+
+					}
+
+				}
+
+				.loader {
+					i {
+						font-size:20px;
+						margin-right:5px;
+					}
+					span {
+						font-size:15px;
+					}
+				}
+					
+				.loadmore {
+					margin-top:3px;
+				}
+
+				.none {
+					line-height:50px;
+					font-size:12px;
+					font-weight:bold;
+				}
+
+			}
+
+		}
+
+
+
+		@media all and (max-width:550px){
+			#alerts {
+
+				[data-hide] {
+					width:100%;
+					top:43px;
+				}
+
+			}
+			.open + #side #alerts [data-hide] {
+				display:none;
+			}
+		}
+

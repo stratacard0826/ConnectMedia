@@ -1,0 +1,90 @@
+
+	/* FILES */
+	/* ----------------------------------------- */
+
+		.files {
+
+			padding:0 20px;
+
+			li {
+				@include box-sizing(border-box);
+				padding:10px;
+				font-size:14px;
+				width:20%;
+
+				small {
+					font-size:80%;
+					display:block;
+					line-height:normal;
+					width:90%;
+					overflow:hidden;
+					text-overflow:ellipsis;
+					white-space:nowrap;
+
+					input {
+						margin:0 3px 0 0;
+					}
+
+					input[type="text"] {
+						width:85%;
+						text-indent:0;
+						border:0;
+						padding:0;
+						margin:0;
+						line-height:normal;
+						font-size:12px;
+						min-height:0;
+						letter-spacing:normal;
+					}
+				}
+
+				progress {
+					width:100%;
+					display:block;
+				}
+
+				select {
+					width:100%;
+				}
+
+				i.remove {
+					cursor:pointer;
+				}
+
+			}
+
+		}
+
+
+		@media all and (max-width:1200px){
+			.files li {
+
+				width:25%;
+
+			}
+		}
+
+		@media all and (max-width:1000px){
+			.files li {
+
+				width:33%;
+
+			}
+		}
+
+
+		@media all and (max-width:630px){
+			.files li {
+
+				width:50%;
+
+			}
+		}
+
+		@media all and (max-width:450px){
+			.files li {
+
+				width:100%;
+
+			}
+		}

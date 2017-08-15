@@ -1,0 +1,77 @@
+
+	/* NAVIGATION */
+	/* ----------------------------------------- */
+
+		#search {
+				
+			padding:0 25px;
+
+			form {
+			
+				position:relative;
+				border-bottom:2px solid map-get($colors,'search');
+				margin-bottom:25px;
+
+				input[type="text"] {
+
+					color:map-get($colors,'search');
+					border:none;
+					font-size:14px;
+					background:none;
+					text-indent:0;
+					letter-spacing:0;
+					font-weight:normal;
+					outline:none;
+					width:146px;
+					margin:0;
+
+					&:hover,
+					&:focus {
+						border:none;
+						
+						@include input-placeholder {
+
+							color:map-get($colors,'search');
+
+						}
+
+					}
+
+					@include input-placeholder {
+
+						color:map-get($colors,'search');
+						font-size:14px;
+
+					}
+
+					&[aria-required]:invalid + button,
+					&[required]:invalid + button {
+						color:map-get($colors,'555') !important;
+					}
+
+				}
+
+				button {
+					color:map-get($colors,'search');
+					background:none;
+					border:none;
+					font-weight:lighter;
+					position:absolute;
+					right:0;
+					top:5px;
+
+					&:hover {
+						color:map-get($colors,'fff');
+					}
+				}
+
+			}
+
+		}
+
+
+		@media all and (min-width:700px) and (max-width:960px), (max-height:725px) {
+			aside #search {
+				display:none;
+			}
+		}

@@ -1,0 +1,55 @@
+
+	/**
+	*
+	*	main.scss
+	* 		- This File handles all of the Includes
+	*
+	**/
+
+	//Load Compass
+	@import "compass";
+
+	//Load Layout
+	@import "compass/layout";
+
+	//Reset Styles
+	@import "compass/reset";
+
+	//Load Compass Utilities
+	@import "compass/utilities";
+
+	//Compass Support
+	@import "compass/support";
+
+	//Compass Sprites
+	@import "compass/css3/images";
+
+	//Compass Hacks
+	@import "compass/utilities/general/hacks";
+
+	//Compass Selection
+	@import "compass/css3/selection";
+
+	//Load Config
+	@import "includes/config";
+
+	//Helpers
+	@import "includes/helpers/**/*.scss";
+
+	//Base
+	@import "includes/base/**/*.scss";
+
+	//Partials
+	@import "includes/partials/**/*.scss";
+
+	//Components
+	@import "includes/components/**/*.scss";
+
+	//Pages
+	@import "includes/pages/**/*.scss";
+
+	//Themes
+	@import "includes/themes/**/*.scss";
+
+	//Vendors
+	@import "includes/vendors/**/*.scss";

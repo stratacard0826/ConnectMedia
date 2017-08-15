@@ -1,0 +1,121 @@
+
+	/* LOGIN */
+	/* ----------------------------------------- */
+
+		#pforgot,
+		#preset,
+		#plogin {
+
+			background:#000 url('../images/bg.jpg') center center no-repeat;
+			background-size:100% 100%;
+
+			section {
+				@extend .clearfix;
+				@include rgba-background( rgba(0,0,0,.7) );
+				@include box-sizing(border-box);
+				@include single-box-shadow(0,0,6px,1px,rgba(0,0,0,.5));
+				width:350px;
+				margin:30px auto 0;
+
+				img {
+					display:block;
+					margin:15px auto 15px;
+				}
+
+				form {
+
+					background:#FFF;
+					width:100%;
+					padding:34px 30px;
+
+					h1 {
+						font-size:24px;
+						margin-bottom:24px;
+					}
+
+					.alert {
+						font-size:13px;
+					}
+
+					div {
+
+						position:relative;
+
+						i {
+							position:absolute;
+							top:9px;
+							width:20px;
+							text-align:center;
+
+							&.fleft {
+								left:10px;
+							}
+
+							&.fright {
+								right:10px;
+							}
+						}
+
+						a.login {
+							font-size:13px;
+						}
+
+						input[type="text"],
+						input[type="email"],
+						input[type="password"] {
+							display:block;
+							margin-bottom:0;
+						}
+
+						input[type="checkbox"] + label {
+							font-size:14px;
+							padding-left:3px;
+						}
+
+
+						&.form-group {
+							margin-bottom:15px;
+						}
+
+						&.reset,
+						&.submit {
+
+							width:82px;
+							height:34px;
+
+							input[type="submit"] {
+								width:82px;
+								height:34px;
+								text-indent:10px;
+								font-size:17px;
+								color:#FFF;
+								text-align:left;
+								border:none;
+								background:transparent;
+								position:absolute;
+								left:0;
+								top:0;
+							}
+
+						}
+
+						&.reset,
+						&.reset input[type="submit"] {
+							width:140px;
+						}
+
+					}
+				
+				}
+
+			}
+
+		}
+
+		@media all and (max-width:350px) {
+			#login section {
+
+			}
+		}
+
+

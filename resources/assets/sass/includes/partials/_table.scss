@@ -1,0 +1,31 @@
+
+	/* TABLE */
+	/* ----------------------------------------- */
+
+		#content table {
+
+			.actions {
+				a, button {
+					display:inline-block;
+					margin:2px;
+				}
+			}
+
+			&.list {
+
+				img {
+					display:block;
+				}
+
+				th,
+				td {
+					vertical-align:middle;
+				}
+
+				td {
+					font-size:13px;
+				}
+
+			}
+
+		}

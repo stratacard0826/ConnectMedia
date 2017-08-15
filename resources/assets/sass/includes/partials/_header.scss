@@ -1,0 +1,161 @@
+
+	/* HEADER */
+	/* ----------------------------------------- */
+
+		#header {
+
+			height:43px;
+			padding:0 40px;
+			position:relative;
+			z-index:1;
+
+			.logo {
+				display:none;
+				height:100%;
+				line-height:40px;
+				img {
+					vertical-align:middle;
+					height:30px;
+				}
+			}
+
+			.menu {
+				display:none;
+				width:35px;
+				line-height:40px;
+				color:#565656;
+				font-size:22px;
+				text-align:center;
+				margin-right:10px;
+				cursor:pointer;
+			}
+
+			section {
+
+				float:left;
+				position:relative;
+				height:100%;
+				position:relative;
+				cursor:pointer;
+				font-size:inherit;
+
+				.showbtn {
+					padding:0 15px;
+				}
+
+				.rounded {
+					
+					display:block;
+					text-align:center;
+					width:18px;
+					height:18px;
+					font-size:11px;
+					font-weight:normal;
+					line-height:18px;
+					position:absolute;
+					top:7px;
+					left:8px;
+
+					+ i {
+						display:block;
+						height:100%;
+						line-height:43px;
+						font-size:22px;
+					}
+
+				}
+
+					
+
+				img {
+					vertical-align:middle;
+
+					+ span {
+						line-height:43px;
+						font-size:13px;
+						display:inline-block;
+						font-weight:600;
+					}
+				}
+
+				&.show [data-hide] {
+					display:block;
+				}
+
+				[data-hide] {
+					position:absolute;
+					right:0;
+				}
+
+				
+				&.show .showbtn,
+				&:hover .showbtn {
+					background:map-get($colors,'222');
+					color:map-get($colors,'aaa');
+					transition: background 0.5s ease;
+					transition: color 0.5s ease;
+				}
+
+			}
+
+		}
+
+
+
+
+		@media all and (max-width:960px){
+			#header {
+				padding:0;
+				position:relative;
+				z-index:11;
+				
+				.logo {
+					display:block;
+					padding-left:5px;
+				}
+
+				section {
+
+					.rounded + i {
+						font-size:18px;
+					}
+
+					img {
+
+						width:20px;
+						height:20px;
+
+						+ span {
+							font-weight:300;
+						}
+
+					}
+
+				}
+
+			}
+		}
+
+		@media all and (max-width:700px){
+			#header {
+				.menu {
+					display:block;
+				}
+				.logo {
+					padding-left:0;
+				}
+			}
+		}
+
+
+		@media all and (max-width:400px){
+			#header {
+
+				section {
+					.showbtn {
+						padding:0 7px;
+					}
+				}
+
+			}
+		}

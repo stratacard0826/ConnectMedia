@@ -1,0 +1,55 @@
+
+	/* LEADERBOARD */
+	/* ----------------------------------------- */
+
+		#map {
+
+			.panel-body {
+				padding:0 0 20px 0;
+
+				map {
+
+					width:100%;
+					height:300px;
+					display:block;
+
+					h4 {
+						font-size:20px;
+					}
+
+					hr {
+						margin:5px 0;
+					}
+
+					address {
+						line-height:140%;
+					}
+
+				}
+
+				.list {
+
+					padding:20px 20px 0;
+
+					table {
+
+						tr {
+
+							th {
+								border-bottom:1px solid #EFEFEF;
+							}
+
+							td {
+								border:1px solid #EFEFEF;
+								border-top:none;
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}

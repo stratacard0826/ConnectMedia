@@ -1,0 +1,102 @@
+
+	/* MIXINS */
+	/* ----------------------------------------- */
+
+
+		/**
+		*
+		*	rgba-background
+		* 		- Takes a RGBa color as the argument, e.g. rgba(0, 0, 0, 0.5) for black background with 50% opacity.
+		*
+		* 		Params:
+		* 			- $color: 		(RGBa) An RGBa Color
+		*
+		**/
+		@mixin rgba-background($color){
+		    @include filter-gradient($color, $color);
+		    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 or $legacy-support-for-ie8 {
+		        background: transparent;
+		        :root & {
+		        	filter: none\0/IE9;
+		    	}
+		    }
+		    background: $color;
+		}
+
+
+
+
+
+		/**
+		*
+		*	triangle
+		* 		- Takes a RGBa color as the argument, e.g. rgba(0, 0, 0, 0.5) for black background with 50% opacity.
+		*
+		* 		Params:
+		* 			- $pointing: 		(top,bottom,left,right) Where the triangle is pointing
+		*			- $base-length: 	(INT) Length of the base of the triangle
+		* 			- $altitude: 		(INT) Length of the height/altitude of the triangle *or* boolean true to specify an equilateral triangle
+		* 			- $color 			(INT) Color of the triangle
+		*
+		**/
+		@mixin triangle($pointing, $base-length, $altitude, $color) {
+
+			// Map $pointing {up: top, down: bottom}
+			@if $pointing == up {
+			
+				$pointing: top;
+			
+			}@else if $pointing == down {
+			
+				$pointing: bottom;
+			
+			}
+			
+			//For an equilateral triangle, calculate the altitude (woohoo, geometry!)
+			@if $altitude == true {
+				$altitude: sqrt(3) / 2 * $base-length;
+			}
+			
+			//The base is made up of 2 opposite borders, so halve it
+			$base-length: $base-length / 2;
+
+			
+			@if index( (top left, top right, bottom left, bottom right) , $pointing ) {
+
+				//Get the Directions
+				$vertical: nth($pointing,1);
+				$horizontal: opposite-position( nth($pointing,2) );
+
+				//Create the Triangle
+				border-#{$vertical}: $altitude solid $color;
+				border-#{$horizontal}: $base-length solid transparent;
+
+			} @else {
+
+				//Get the Base
+				$base: opposite-position($pointing);
+
+				//Create a simple triangle
+				border: $base-length solid transparent;
+				border-#{$base}: $altitude solid $color;
+				border-#{$pointing}: 0;
+
+			}
+
+			height: 0;
+			width: 0;
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
